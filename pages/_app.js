@@ -8,7 +8,7 @@ import { setConfiguration } from 'react-grid-system'
 
 import { UserProvider } from '../components/hooks'
 
-setConfiguration({ containerWidths: [960, 960, 960, 960, 960], gridColumns: 24 })
+setConfiguration({ containerWidths: [1920, 1920, 1920, 1920, 1920], gridColumns: 24 })
 
 NProgress.configure({ showSpinner: true })
 Router.events.on('routeChangeStart', () => {

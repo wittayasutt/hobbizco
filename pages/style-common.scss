@@ -3,6 +3,16 @@
   --font-weight-bold: 600;
   --font-weight-bolder: 700;
 
+  --font-size-2000: 8rem;
+  --font-size-1900: 7.5rem;
+  --font-size-1800: 7rem;
+  --font-size-1700: 6.5rem;
+  --font-size-1600: 6rem;
+  --font-size-1500: 5.5rem;
+  --font-size-1600: 5rem;
+  --font-size-1500: 4.5rem;
+  --font-size-1400: 4rem;
+  --font-size-1300: 3.5rem;
   --font-size-1200: 3rem;
   --font-size-1100: 2.5rem;
   --font-size-1000: 2.25rem;
@@ -105,6 +115,89 @@
 ._fs-1200 {
   font-size: var(--font-size-1200) !important;
 }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    ._fs-100 {
+      font-size: var(--font-size-500) !important;
+    }
+    ._fs-200 {
+      font-size: var(--font-size-600) !important;
+    }
+    ._fs-300 {
+      font-size: var(--font-size-700) !important;
+    }
+    ._fs-400 {
+      font-size: var(--font-size-800) !important;
+    }
+    ._fs-500 {
+      font-size: var(--font-size-900) !important;
+    }
+    ._fs-600 {
+      font-size: var(--font-size-1000) !important;
+    }
+    ._fs-700 {
+      font-size: var(--font-size-1100) !important;
+    }
+    ._fs-800 {
+      font-size: var(--font-size-1200) !important;
+    }
+    ._fs-900 {
+      font-size: var(--font-size-1300) !important;
+    }
+    ._fs-1000 {
+      font-size: var(--font-size-1400) !important;
+    }
+    ._fs-1100 {
+      font-size: var(--font-size-1500) !important;
+    }
+    ._fs-1200 {
+      font-size: var(--font-size-1600) !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    ._fs-100 {
+      font-size: var(--font-size-700) !important;
+    }
+    ._fs-200 {
+      font-size: var(--font-size-800) !important;
+    }
+    ._fs-300 {
+      font-size: var(--font-size-900) !important;
+    }
+    ._fs-400 {
+      font-size: var(--font-size-1000) !important;
+    }
+    ._fs-500 {
+      font-size: var(--font-size-1100) !important;
+    }
+    ._fs-600 {
+      font-size: var(--font-size-1200) !important;
+    }
+    ._fs-700 {
+      font-size: var(--font-size-1300) !important;
+    }
+    ._fs-800 {
+      font-size: var(--font-size-1400) !important;
+    }
+    ._fs-900 {
+      font-size: var(--font-size-1500) !important;
+    }
+    ._fs-1000 {
+      font-size: var(--font-size-1600) !important;
+    }
+    ._fs-1100 {
+      font-size: var(--font-size-1700) !important;
+    }
+    ._fs-1200 {
+      font-size: var(--font-size-1800) !important;
+    }
+  }
+}
+
 // --- //
 ._pst-rlt {
   position: relative !important;

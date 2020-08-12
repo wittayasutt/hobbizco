@@ -1,0 +1,290 @@
+:root {
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --font-weight-bolder: 700;
+
+  --font-size-1200: 3rem;
+  --font-size-1100: 2.5rem;
+  --font-size-1000: 2.25rem;
+  --font-size-900: 2rem;
+  --font-size-800: 1.75rem;
+  --font-size-700: 1.5rem;
+  --font-size-600: 1.25rem;
+  --font-size-500: 1.125rem;
+  --font-size-400: 1rem;
+  --font-size-300: 0.875rem;
+  --font-size-200: 0.75rem;
+  --font-size-100: 0.6875rem;
+
+  --color-primary-blue: rgb(5, 132, 197);
+  --color-dark-blue: rgb(4, 105, 156);
+  --color-light-blue: rgb(63, 190, 255);
+  --color-primary-gray: rgb(94, 94, 94);
+  --color-light-gray: rgb(171, 171, 171);
+
+  --tablet-width: 768px;
+}
+
+// helper
+._fw-nm {
+  font-weight: var(--font-weight-normal) !important;
+}
+._fw-b {
+  font-weight: var(--font-weight-bold) !important;
+}
+._fw-bd {
+  font-weight: var(--font-weight-bolder) !important;
+}
+// --- //
+._cl-pmr-blue {
+  color: var(--color-primary-blue) !important;
+}
+._cl-d-blue {
+  color: var(--color-dark-blue) !important;
+}
+._cl-l-blue {
+  color: var(--color-light-blue) !important;
+}
+._cl-gray {
+  color: var(--color-primary-gray) !important;
+}
+._cl-l-gray {
+  color: var(--color-light-gray) !important;
+}
+._cl-black {
+  color: black !important;
+}
+// --- //
+._bgcl-pmr-b {
+  background-color: var(--color-primary-blue) !important;
+}
+._bgcl-d-b {
+  background-color: var(--color-dark-blue) !important;
+}
+._bgcl-l-b {
+  background-color: var(--color-light-blue) !important;
+}
+// --- //
+._fst-itl {
+  font-style: italic !important;
+}
+// --- //
+._fs-100 {
+  font-size: var(--font-size-100) !important;
+}
+._fs-200 {
+  font-size: var(--font-size-200) !important;
+}
+._fs-300 {
+  font-size: var(--font-size-300) !important;
+}
+._fs-400 {
+  font-size: var(--font-size-400) !important;
+}
+._fs-500 {
+  font-size: var(--font-size-500) !important;
+}
+._fs-600 {
+  font-size: var(--font-size-600) !important;
+}
+._fs-700 {
+  font-size: var(--font-size-700) !important;
+}
+._fs-800 {
+  font-size: var(--font-size-800) !important;
+}
+._fs-900 {
+  font-size: var(--font-size-900) !important;
+}
+._fs-1000 {
+  font-size: var(--font-size-1000) !important;
+}
+._fs-1100 {
+  font-size: var(--font-size-1100) !important;
+}
+._fs-1200 {
+  font-size: var(--font-size-1200) !important;
+}
+// --- //
+._pst-rlt {
+  position: relative !important;
+}
+._pst-asl {
+  position: absolute !important;
+}
+// --- //
+$sizes: (
+  '0px': '0px',
+  '4px': '4px',
+  '8px': '8px',
+  '12px': '12px',
+  '16px': '16px',
+  '18px': '18px',
+  '24px': '24px',
+  '28px': '28px',
+  '32px': '32px',
+  '36px': '36px',
+  '48px': '48px',
+  '64px': '64px',
+  'at': 'auto',
+);
+@each $key, $val in $sizes {
+  ._mgbt-#{$key} {
+    margin-bottom: #{$val} !important;
+  }
+  ._mgt-#{$key} {
+    margin-top: #{$val} !important;
+  }
+  ._mgl-#{$key} {
+    margin-left: #{$val} !important;
+  }
+  ._mgr-#{$key} {
+    margin-right: #{$val} !important;
+  }
+  ._mgv-#{$key} {
+    margin-top: #{$val} !important;
+    margin-bottom: #{$val} !important;
+  }
+  ._mgh-#{$key} {
+    margin-left: #{$val} !important;
+    margin-right: #{$val} !important;
+  }
+  ._mg-#{$key} {
+    margin: #{$val} !important;
+  }
+  // --- //
+  ._pdbt-#{$key} {
+    padding-bottom: #{$val} !important;
+  }
+  ._pdt-#{$key} {
+    padding-top: #{$val} !important;
+  }
+  ._pdl-#{$key} {
+    padding-left: #{$val} !important;
+  }
+  ._pdr-#{$key} {
+    padding-right: #{$val} !important;
+  }
+  ._pdv-#{$key} {
+    padding-top: #{$val} !important;
+    padding-bottom: #{$val} !important;
+  }
+  ._pdh-#{$key} {
+    padding-left: #{$val} !important;
+    padding-right: #{$val} !important;
+  }
+  ._pd-#{$key} {
+    padding: #{$val} !important;
+  }
+}
+// --- //
+$flexes: (
+  'ct': 'center',
+  'fe': 'flex-end',
+  'fst': 'flex-start',
+  'spbtw': 'space-between',
+  'spar': 'space-around',
+);
+@each $key, $val in $flexes {
+  ._alit-#{$key} {
+    align-items: #{$val} !important;
+  }
+  ._jtfct-#{$key} {
+    justify-content: #{$val} !important;
+  }
+  ._als-#{$key} {
+    align-self: #{$val} !important;
+  }
+}
+._dp-f {
+  display: flex !important;
+}
+._f-1 {
+  flex: 1 !important;
+}
+// --- //
+._pst-rlt {
+  position: relative !important;
+}
+._pst-asl {
+  position: absolute !important;
+}
+._l-0 {
+  left: 0 !important;
+}
+._r-0 {
+  right: 0 !important;
+}
+._t-0 {
+  top: 0 !important;
+}
+._bottom-0 {
+  bottom: 0 !important;
+}
+// --- //
+._cs-pt {
+  cursor: pointer !important;
+}
+._tdcrt-n {
+  text-decoration: none !important;
+}
+._tdcrt-udl {
+  text-decoration: underline !important;
+}
+._hv-tdcrt-udl {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+._tal-l {
+  text-align: left !important;
+}
+._tal-r {
+  text-align: right !important;
+}
+._tal-ct {
+  text-align: center !important;
+}
+
+// --- //
+._fl-l {
+  float: left !important;
+}
+._fl-r {
+  float: right !important;
+}
+
+// --- //
+$font-weight: (
+  'b': 'bold',
+  'bd': 'bolder',
+  'nm': 'normal',
+  'lt': 'lighter',
+);
+@each $key, $val in $font-weight {
+  ._fw-#{$key} {
+    font-weight: #{$val} !important;
+  }
+}
+
+// --- //
+._mw-100pc {
+  max-width: 100% !important;
+}
+
+$percent: (
+  '80': '80%',
+  '85': '85%',
+);
+@each $key, $val in $percent {
+  ._fw-#{$key} {
+    font-weight: #{$val} !important;
+  }
+
+  ._els-#{$key}p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: #{$val};
+  }
+}

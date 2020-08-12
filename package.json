@@ -1,0 +1,55 @@
+{
+  "name": "front-end-pro-teacher",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://woraponok@bitbucket.org/woraponok/front-end-pro-teacher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/woraponok/front-end-pro-teacher#readme",
+  "dependencies": {
+    "@intervolga/optimize-cssnano-plugin": "^1.0.6",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "fs": "0.0.1-security",
+    "js-cookie": "^2.2.1",
+    "next": "^9.4.2",
+    "node-sass": "^4.14.1",
+    "nprogress": "^0.2.0",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-grid-system": "^6.4.2",
+    "react-hook-form": "^5.7.2",
+    "react-multi-select-component": "^2.0.9",
+    "react-paginate": "^6.3.2",
+    "react-player": "^2.1.1",
+    "react-select": "^3.1.0",
+    "reactstrap": "^8.4.1",
+    "sass": "^1.26.5",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

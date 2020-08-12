@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /backoffice/
+
+Sitemap: http://www.proteachersvideo.com/sitemap.xml

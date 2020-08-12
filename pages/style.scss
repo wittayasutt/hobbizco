@@ -1,0 +1,20 @@
+@import '~nprogress/nprogress.css';
+@import './style-common.scss';
+
+body {
+  font-family: Arial;
+  font-size: 24px;
+  color: var(--color-primary-gray);
+  position: relative;
+  min-width: 1024px;
+
+  a {
+    color: inherit;
+  }
+}
+
+// custom nprogress
+#nprogress .bar {
+  background: var(--color-primary-blue);
+  height: 2.5px;
+}
